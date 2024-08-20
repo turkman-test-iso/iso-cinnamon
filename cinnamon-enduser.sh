@@ -32,7 +32,7 @@ echo "/bin/bash" > /etc/shells
 echo "/bin/sh" >> /etc/shells
 echo "/bin/ash" >> /etc/shells
 # hostname
-echo Turkman Linux > /etc/hostname
+echo turkman > /etc/hostname
 # install wifi and bluetooth
 ymp it wpa_supplicant networkmanager bluez --no-emerge --allow-oem
 # install lightdm
