@@ -8,10 +8,9 @@ wget https://gitlab.com/turkman/devel/sources/installer/-/raw/master/main.sh -O 
 chmod 755 /sbin/init
 # install cinnamon
 ymp repo --update --allow-oem --ignore-gpg
-ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem
-ymp it elogind shadow pipewire wireplumber libtool firefox-installer mousepad fuse fuse2 --no-emerge --allow-oem
-ymp it @cinnamon gnome-screenshot caribou dejavu adwaita-icon-theme gsettings-desktop-schemas polkit-gnome gnome-terminal libhandy seatd touchegg --no-emerge --allow-oem
-ymp it gnome-icon-theme gnome-themes-standard --no-emerge --allow-oem
+ymp it xinit --no-emerge --allow-oem
+ymp it elogind shadow pipewire wireplumber libtool fuse fuse2 --no-emerge --allow-oem
+ymp it @kde caribou dejavu libhandy seatd touchegg --no-emerge --allow-oem
 
 # fstab add tmpfs
 echo "tmpfs /tmp tmpfs rw 0 0" > /etc/fstab
