@@ -1,1 +1,1 @@
-Turkman Linux Cinnamon Enduser ISO - by mobilturka
+Turkman GNU/Linux Cinnamon ISO - by mobilturka
