@@ -1,1 +1,1 @@
-Turkman GNU/Linux Cinnamon ISO - by mt
+Turkman GNU/Linux Cinnamon ISO - by mobilturka
