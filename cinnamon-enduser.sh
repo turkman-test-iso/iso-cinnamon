@@ -9,7 +9,7 @@ chmod 755 /sbin/init
 # install cinnamon
 ymp repo --update --allow-oem --ignore-gpg
 ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem
-ymp it elogind shadow pipewire wireplumber libtool firefox-installer mousepad inxi tzdata ristretto fuse fuse2 --no-emerge --allow-oem
+ymp it elogind shadow pipewire wireplumber libtool firefox-installer mousepad inxi tzdata ristretto fuse fuse2 flatpak --no-emerge --allow-oem
 ymp it @cinnamon gnome-screenshot caribou dejavu adwaita-icon-theme gsettings-desktop-schemas polkit-gnome gnome-terminal libhandy seatd touchegg --no-emerge --allow-oem
 ymp it gnome-icon-theme gnome-themes-standard lightdm lightdm-gtk-greeter --no-emerge --allow-oem
 
@@ -50,6 +50,7 @@ rc-update add lightdm
 rc-update add bluetooth
 rc-update add polkit
 rc-update add touchegg
+rc-update add devfs
 ymp clean --allow-oem
 # revert hardened bindir
 mkdir -p /usr/local/bin
