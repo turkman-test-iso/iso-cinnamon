@@ -1,1 +1,1 @@
-# Turkman Linux Cinnamon ISO 
+# Turkman Linux Cinnamon ISO
